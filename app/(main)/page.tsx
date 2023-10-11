@@ -2,6 +2,6 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <main className='bg-blue-100'>Home</main>
   )
 }

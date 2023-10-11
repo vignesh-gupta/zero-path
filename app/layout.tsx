@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={clsx(inter.className, "min-h-screen flex")}>
+        <body className={clsx(inter.className, "min-h-screen flex flex-col")}>
           <Providers
             attribute="class"
             defaultTheme="system"
