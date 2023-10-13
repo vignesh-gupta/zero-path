@@ -1,40 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-
-const navLinks = [
-  {
-    text: 'Home',
-    href: '/'
-  }, 
-  {
-    text: 'Docs',
-    href: '/docs'
-  },
-  {
-    text: 'Components',
-    href: '/docs/components'
-  },
-  {
-    text: 'Themes',
-    href: '/themes'
-  },
-  {
-    text: 'Examples',
-    href: '/examples'
-  }
-
-]
+import { SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { navLinks } from "@/lib/constants/mappingConstants";
 
 const MobileNav = () => {
   return (

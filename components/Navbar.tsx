@@ -13,6 +13,7 @@ import {
   useAuth,
   useClerk,
 } from "@clerk/nextjs";
+import { navLinks } from "@/lib/constants/mappingConstants";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,39 +33,22 @@ const Navbar = () => {
             :0 Path
           </a>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-            <a
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="/docs"
-            >
-              Documentation
-            </a>
-            <a
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="/docs/components"
-            >
-              Components
-            </a>
-            <a
-              className="transition-colors hover:text-foreground/80 text-foreground"
-              href="/themes"
-            >
-              Themes
-            </a>
-            <a
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="/examples"
-            >
-              Examples
-            </a>
+            {navLinks.map((link) => (
+              <a
+                key={link.text.toLocaleLowerCase()}
+                className="transition-colors hover:text-foreground/80 text-foreground/60"
+                href={link.href}
+              >
+                {link.text}
+              </a>
+            ))}
           </nav>
         </div>
 
         <div className="justify-end flex-1 flex gap-3 items-center">
           <ThemeSwitch />
           {isSignedIn ? (
-            <UserButton
-              afterSignOutUrl="/"
-            />
+            <UserButton afterSignOutUrl="/" />
           ) : (
             <SignInButton mode="modal">
               <Button className="text-white">Sign In</Button>
