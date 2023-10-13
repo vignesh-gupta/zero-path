@@ -8,6 +8,9 @@ dependencies:
   '@clerk/nextjs':
     specifier: ^4.24.1
     version: 4.24.1(next@13.5.2)(react-dom@18.2.0)(react@18.2.0)
+  '@clerk/themes':
+    specifier: ^1.7.7
+    version: 1.7.7(react@18.2.0)
   '@radix-ui/react-dialog':
     specifier: ^1.0.5
     version: 1.0.5(@types/react-dom@18.2.7)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
@@ -165,6 +168,15 @@ packages:
       js-cookie: 3.0.1
       react: 18.2.0
       swr: 2.2.0(react@18.2.0)
+    dev: false
+
+  /@clerk/themes@1.7.7(react@18.2.0):
+    resolution: {integrity: sha512-nQqqaGVwfUK7A4y/STuYBj1Bdxk2PG48ChwxXz/ldC7+VRK3mtY5K7VLe76UGWpqrehrWL/vV6GAYu51K9UFeQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@clerk/types@3.52.0:

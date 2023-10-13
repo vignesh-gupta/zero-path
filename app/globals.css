@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -26,7 +25,7 @@
     --ring: 221.2 83.2% 53.3%;
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -48,4 +47,17 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
   }
+}
+
+.cl-userButtonPopoverFooter > * {
+  color: hsl(var(--muted-foreground));
+}
+
+.cl-userButtonPopoverCard {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.cl-userButtonPopoverActions  * , .cl-userPreviewSecondaryIdentifier  {
+  color: hsl(var(--muted-foreground));
 }

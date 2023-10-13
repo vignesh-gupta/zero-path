@@ -6,9 +6,18 @@ import { MenuIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger } from "@/components/ui/sheet";
 import MobileNav from "./MobileNav";
+import {
+  SignInButton,
+  UserButton,
+  UserProfile,
+  useAuth,
+  useClerk,
+} from "@clerk/nextjs";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { isSignedIn } = useAuth();
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -50,8 +59,17 @@ const Navbar = () => {
           </nav>
         </div>
 
-        <div className="justify-end flex-1 flex">
+        <div className="justify-end flex-1 flex gap-3 items-center">
           <ThemeSwitch />
+          {isSignedIn ? (
+            <UserButton
+              afterSignOutUrl="/"
+            />
+          ) : (
+            <SignInButton mode="modal">
+              <Button className="text-white">Sign In</Button>
+            </SignInButton>
+          )}
         </div>
         <Sheet>
           <SheetTrigger asChild className="-order-1">
