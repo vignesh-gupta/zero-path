@@ -6,13 +6,7 @@ import { MenuIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger } from "@/components/ui/sheet";
 import MobileNav from "./MobileNav";
-import {
-  SignInButton,
-  UserButton,
-  UserProfile,
-  useAuth,
-  useClerk,
-} from "@clerk/nextjs";
+import { SignInButton, UserButton, useAuth } from "@clerk/nextjs";
 import { navLinks } from "@/lib/constants/mappingConstants";
 
 const Navbar = () => {

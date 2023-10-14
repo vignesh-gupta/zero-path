@@ -1,0 +1,3 @@
+export const DEPLOY_URL= `https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvignesh-gupta%2Fzero-path&project-name=zero-path&repository-name=zero-path&demo-title=%3A0-path&demo-description=An%20opinionated%20collection%20of%20components%2C%20hooks%2C%20and%20utilities%20for%20your%20Next%20project.&demo-url=https%3A%2F%2Fzero-path.vercel.app&demo-image=https%3A%2F%2Fzero-path.vercel.app%2Fopengraph-image&env=GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET,NEXTAUTH_SECRET&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fvignesh-gupta%2Fzero-path%2Fblob%2Fmain%2F.env.example&stores=%5B%7B%22type%22%3A%22postgres%22%7D%5D`
+
+const REPO_URL = "https://github.com/vignesh-gupta/zero-path"

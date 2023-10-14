@@ -1,11 +1,13 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Atkinson_Hyperlegible } from "next/font/google";
 import { Providers } from "@/components/providers";
-import { dark } from "@clerk/themes";
 
-const inter = Inter({ subsets: ["latin"] });
+const atkinsonHyperlegible = Atkinson_Hyperlegible({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +22,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
+        <body className={atkinsonHyperlegible.className}>
           <Providers
             attribute="class"
             defaultTheme="system"
