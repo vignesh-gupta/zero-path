@@ -1,28 +1,35 @@
-import { DEPLOY_URL } from "@/lib/constants";
-import Image from "next/image";
-import React from "react";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import { Poppins } from "next/font/google";
-import clsx from "clsx";
+"use client";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
+import clsx from "clsx";
+import Link from "next/link";
+import { motion } from "framer-motion";
+
+import { Button } from "@/components/ui/button";
+import { DEPLOY_URL } from "@/lib/constants";
+import { poppins } from "@/lib/fonts";
+
+
 
 const HeroSection = () => {
   return (
     <div className="z-10 w-full max-w-xl py-11 flex flex-col justify-center items-center">
-      <h1
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
         className={clsx(
           "bg-gradient-to-br from-primary to-muted-foreground bg-clip-text text-center font-display text-3xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm [text-wrap:balance] md:text-5xl pb-2",
           poppins.className
         )}
       >
         A Step toward faster development in Next.js
-      </h1>
-      <p className="my-6 text-center text-gray-500 [text-wrap:balance] md:text-xl">
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="my-6 text-center text-gray-500 [text-wrap:balance] md:text-xl"
+      >
         A starter template for Next.js with some opinionated libraries
         configured. Similar to{" "}
         <Link
@@ -34,8 +41,13 @@ const HeroSection = () => {
           precedent.dev
         </Link>{" "}
         but with different stack
-      </p>
-      <div className="mx-auto mt-6 flex items-center justify-center space-x-5 ">
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="mx-auto mt-6 flex items-center justify-center space-x-5 "
+      >
         <Button
           asChild
           // variant="outline"
@@ -84,7 +96,7 @@ const HeroSection = () => {
             </p>
           </Link>
         </Button>
-      </div>
+      </motion.div>
     </div>
   );
 };
