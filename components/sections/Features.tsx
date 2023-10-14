@@ -170,6 +170,7 @@ export const features = [
         >
           @vercel/og
         </Link>
+        and many more...
       </>
     ),
   },

@@ -12,8 +12,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zero Path - Your Next.js project kickstarter ",
     description:
-      "Zero Path is the project starter kit to the ball rolling in matter of seconds",
+      "Zero Path is the project starter kit for your NextJS project to the ball rolling in matter of seconds",
     creator: "@VighneshGupta9",
+    images: new URL("https://zeropath.vercel.app/"),
   },
   metadataBase: new URL("https://zeropath.vercel.app/"),
   themeColor: "#FFF",
@@ -30,7 +31,7 @@ export default function RootLayout({
         <body className={atkinsonHyperlegible.className}>
           <Providers
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
