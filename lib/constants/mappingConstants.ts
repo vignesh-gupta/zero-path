@@ -1,3 +1,4 @@
+import { DEPLOY_URL } from '@/lib/constants';
 export const navLinks = [
   {
     text: "Home",
@@ -20,3 +21,4 @@ export const navLinks = [
     href: "/examples",
   },
 ];
+
