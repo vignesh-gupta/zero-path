@@ -1,4 +1,4 @@
-# Frontend Starter Repository - 2023
+# Zero Path
 
 ## Use of the Repo
 

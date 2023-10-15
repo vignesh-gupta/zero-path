@@ -1,39 +1,47 @@
-import { poppins } from "@/lib/fonts";
-import clsx from "clsx";
+"use client";
+
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { motion } from "framer-motion";
+import clsx from "clsx";
 import Link from "next/link";
-import { DEPLOY_URL } from "@/lib/constants";
 import Image from "next/image";
+import { poppins } from "@/lib/fonts";
+import { DEPLOY_URL } from "@/lib/constants";
 
 const FeatureSection = () => {
   return (
     <div className="w-full">
-      {/* TODO: Add a gradient to the text */}
-      <h2
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
         className={clsx(
           "text-xl md:text-2xl lg:text-3xl font-semibold text-primary text-center py-3",
           poppins.className
         )}
       >
         Some Features
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      </motion.h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {features.map((feature, i) => (
-          <Card
+          <motion.div
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.1 },
+            }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.5, delay: 0.1 * i },
+            }}
             key={i}
-            className="bg-transparent border border-muted w-full shadow-lg flex flex-col"
+            className="rounded-lg text-card-foreground bg-transparent border border-muted w-full shadow-lg flex flex-col hover:border-muted-foreground"
           >
-            <CardHeader></CardHeader>
-            <CardContent className="flex justify-center items-center grow gap-2">
+            <div className="p-6 pt-12 flex justify-center items-center grow gap-2">
               {feature.description}
-            </CardContent>
-            <CardFooter className="flex-col items-center">
+            </div>
+            <div className="flex p-6 pt-0 flex-col items-center">
               <h3
                 className={clsx(
                   "text-lg text-center font-medium mb-3",
@@ -45,8 +53,8 @@ const FeatureSection = () => {
               <p className="text-sm text-muted-foreground text-center">
                 {feature.footer}
               </p>
-            </CardFooter>
-          </Card>
+            </div>
+          </motion.div>
         ))}
       </div>
     </div>
@@ -55,7 +63,7 @@ const FeatureSection = () => {
 
 export default FeatureSection;
 
-export const features = [
+const features = [
   {
     title: "Single Click deployment",
     description: (

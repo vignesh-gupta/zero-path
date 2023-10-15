@@ -1,6 +1,5 @@
 import FeatureSection from "@/components/sections/Features";
 import HeroSection from "@/components/sections/Hero";
-import Image from "next/image";
 
 export default function Home() {
   return (

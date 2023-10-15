@@ -6,7 +6,7 @@ import { navLinks } from "@/lib/constants/mappingConstants";
 
 const MobileNav = () => {
   return (
-    <SheetContent>
+    <SheetContent side='left'>
       <SheetHeader>
         <SheetTitle>:0 Path</SheetTitle>
       </SheetHeader>
