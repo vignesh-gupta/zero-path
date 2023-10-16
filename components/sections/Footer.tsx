@@ -28,7 +28,6 @@ const FooterSection = () => {
       </p>
 
       <div className="text-muted-foreground flex flex-col gap-3 items-center">
-        <p>Like this project?</p>
         <div className="flex gap-2 items-center">
           <GitHubButton className="rounded-md" />
           <div className="h-12 border" />
@@ -40,7 +39,7 @@ const FooterSection = () => {
             )}
           >
             <Link
-              href="https://github.com/vignesh-gupta/zero-path"
+              href="https://www.buymeacoffee.com/vighneshg"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -109,9 +108,7 @@ const FooterSection = () => {
                   fill="#0D0C22"
                 ></path>
               </svg>
-              <p>
-                <span className="hidden sm:inline-block">Star on</span> GitHub
-              </p>
+              <p>Buy me a coffee</p>
             </Link>
           </Button>
         </div>

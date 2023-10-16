@@ -55,6 +55,7 @@ const Navbar = () => {
               className="md:hidden mr-3"
               variant="outline"
               size="icon"
+              aria-label="Open Menu"
               onClick={handleMenuClick}
             >
               <MenuIcon className="w-6 h-6" />

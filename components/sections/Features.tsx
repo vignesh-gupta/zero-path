@@ -50,7 +50,7 @@ const FeatureSection = () => {
               >
                 {feature.title}
               </h3>
-              <p className="text-sm text-muted-foreground text-center">
+              <p className="text-sm text-center">
                 {feature.footer}
               </p>
             </div>
@@ -107,7 +107,7 @@ const features = [
             width={70}
             height={70}
             unoptimized
-            src="/clerk.png"
+            src="/clerk.webp"
             alt="Vercel deploy button"
             className="object-cover bg-white rounded-full"
           />
@@ -161,7 +161,7 @@ const features = [
           width={100}
           height={100}
           unoptimized
-          src="/react-hook.png"
+          src="/react-hook.webp"
           alt="Vercel deploy button"
           className="object-cover rounded-full"
         />

@@ -49,8 +49,7 @@ const HeroSection = () => {
       >
         <Button
           asChild
-          // variant="outline"
-          className="group gap-2 text-sm text-white hover:text-black hover:bg-white rounded-full hover:shadow-lg border hover:border-muted-foreground border-primary"
+          className="group gap-2 text-sm shadow-xl text-white hover:text-black hover:bg-white rounded-full hover:shadow-lg border hover:border-muted-foreground border-primary"
         >
           <Link href={DEPLOY_URL} target="_blank" rel="noopener noreferrer">
             <svg
