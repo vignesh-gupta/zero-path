@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { poppins } from "@/lib/fonts";
 import { DEPLOY_URL } from "@/lib/constants";
+import SocialButton from "../shared/social-btn";
 
 const FeatureSection = () => {
   return (
@@ -68,7 +69,7 @@ const features = [
     title: "Single Click deployment",
     description: (
       <>
-        <Link href={DEPLOY_URL} target="_blank" rel="noopener noreferrer">
+        {/* <Link href={DEPLOY_URL} target="_blank" rel="noopener noreferrer">
           <Image
             width={120}
             height={30}
@@ -76,7 +77,8 @@ const features = [
             src="https://vercel.com/button"
             alt="Vercel deploy button"
           />
-        </Link>
+        </Link> */}
+        <SocialButton icon="vercel" className="rounded-md text-lg hover:bg-primary hover:text-white" text="Deploy" />
       </>
     ),
     footer: (

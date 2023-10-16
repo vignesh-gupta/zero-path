@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { DEPLOY_URL } from "@/lib/constants";
 import { poppins } from "@/lib/fonts";
-import GitHubButton from "@/components/shared/gh-button";
+import SocialButton from "@/components/shared/social-btn";
 
 const HeroSection = () => {
   return (
@@ -47,7 +47,7 @@ const HeroSection = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="mx-auto mt-6 flex items-center justify-center space-x-5 "
       >
-        <Button
+        {/* <Button
           asChild
           className="group gap-2 text-sm shadow-xl text-white hover:text-black hover:bg-white rounded-full hover:shadow-lg border hover:border-muted-foreground border-primary"
         >
@@ -68,8 +68,9 @@ const HeroSection = () => {
             </svg>
             <p>Deploy to Vercel</p>
           </Link>
-        </Button>
-        <GitHubButton />
+        </Button> */}
+        <SocialButton icon="vercel" />
+        <SocialButton icon="github" />
       </motion.div>
     </div>
   );
