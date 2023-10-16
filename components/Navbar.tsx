@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="supports-backdrop-blur:bg-background/60 sticky top-0 z-50 w-full border-b dark:bg-background/95 backdrop-blur">
+    <header className="supports-backdrop-blur:bg-background/60 sticky top-0 z-50 w-full border-b border-muted backdrop-blur">
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex">
           <a className="mr-6 flex font-bold items-center space-x-2" href="/">
