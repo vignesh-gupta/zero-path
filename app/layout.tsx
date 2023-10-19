@@ -17,10 +17,20 @@ export const metadata: Metadata = {
     description:
       "Zero Path is the project starter kit for your NextJS project to the ball rolling in matter of seconds",
     creator: "@VighneshGupta9",
-    images: new URL(SITE_URL),
+    images:
+      "https://user-images.githubusercontent.com/52371759/276502182-b603bee4-89b1-4a03-88c5-d82d9b7080dd.png",
+  },
+  openGraph: {
+    title: "Zero Path - Your Next.js project kickstarter ",
+    description:
+      "Zero Path is the project starter kit for your NextJS project to the ball rolling in matter of seconds",
+    images:
+      "https://user-images.githubusercontent.com/52371759/276502182-b603bee4-89b1-4a03-88c5-d82d9b7080dd.png",
+    type: "website",
+    url: SITE_URL,
   },
   metadataBase: new URL(SITE_URL),
-  themeColor: "#FFF",
+  themeColor: "#020817",
 };
 
 export default function RootLayout({
