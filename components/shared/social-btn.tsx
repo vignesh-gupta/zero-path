@@ -19,7 +19,7 @@ const SocialButton = ({ className, icon, text, href }: SocialButtonProps) => {
       className={clsx(
         "group gap-2 text-sm rounded-full shadow-xl hover:border-white/50",
         icons[icon].className,
-        className
+        className,
       )}
     >
       <Link
@@ -64,7 +64,8 @@ const icons = {
   vercel: {
     href: DEPLOY_URL,
     text: <>Deploy to Vercel</>,
-    className: "text-white hover:text-black hover:bg-white border hover:border-muted-foreground border-primary",
+    className:
+      "text-white hover:text-black hover:bg-white border hover:border-muted-foreground border-primary",
     svg: (
       <svg
         className="h-4 w-4 group-hover:text-black"

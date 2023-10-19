@@ -28,7 +28,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={atkinsonHyperlegible.className} suppressHydrationWarning>
+        <body
+          className={atkinsonHyperlegible.className}
+          suppressHydrationWarning
+        >
           <Providers
             attribute="class"
             defaultTheme="dark"

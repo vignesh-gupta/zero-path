@@ -58,6 +58,7 @@
   color: hsl(var(--foreground));
 }
 
-.cl-userButtonPopoverActions  * , .cl-userPreviewSecondaryIdentifier  {
+.cl-userButtonPopoverActions *,
+.cl-userPreviewSecondaryIdentifier {
   color: hsl(var(--muted-foreground));
 }

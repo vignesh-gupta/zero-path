@@ -18,7 +18,7 @@ const FeatureSection = () => {
         transition={{ duration: 0.5 }}
         className={clsx(
           "text-xl md:text-2xl lg:text-3xl font-semibold text-primary text-center py-3",
-          poppins.className
+          poppins.className,
         )}
       >
         Some Features
@@ -46,14 +46,12 @@ const FeatureSection = () => {
               <h3
                 className={clsx(
                   "text-lg text-center font-medium mb-3",
-                  poppins.className
+                  poppins.className,
                 )}
               >
                 {feature.title}
               </h3>
-              <p className="text-sm text-center">
-                {feature.footer}
-              </p>
+              <p className="text-sm text-center">{feature.footer}</p>
             </div>
           </motion.div>
         ))}
@@ -78,7 +76,11 @@ const features = [
             alt="Vercel deploy button"
           />
         </Link> */}
-        <SocialButton icon="vercel" className="rounded-md text-lg hover:bg-primary hover:text-white" text="Deploy" />
+        <SocialButton
+          icon="vercel"
+          className="rounded-md text-lg hover:bg-primary hover:text-white"
+          text="Deploy"
+        />
       </>
     ),
     footer: (
@@ -171,8 +173,9 @@ const features = [
     ),
     footer: (
       <>
-        Zero-Path offers a collection of hooks, utilities, and
-        <Link
+        Zero-Path offers a collection of hooks, utilities, and many more...
+        {/* TODO:Setup @vercel/og */}
+        {/* <Link
           className="px-1 underline underline-offset-2"
           target="_blank"
           rel="noopener noreferrer"
@@ -180,7 +183,7 @@ const features = [
         >
           @vercel/og
         </Link>
-        and many more...
+        and  */}
       </>
     ),
   },

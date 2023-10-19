@@ -18,7 +18,7 @@ const HeroSection = () => {
         transition={{ duration: 0.5 }}
         className={clsx(
           "bg-gradient-to-br from-primary to-muted-foreground bg-clip-text text-center font-display text-3xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm [text-wrap:balance] md:text-5xl pb-2",
-          poppins.className
+          poppins.className,
         )}
       >
         A Step toward faster development in Next.js
