@@ -30,7 +30,23 @@ export const metadata: Metadata = {
     url: SITE_URL,
   },
   metadataBase: new URL(SITE_URL),
-  themeColor: "#020817",
+  themeColor: [
+    {
+      color: "#020817",
+      media: "dark",
+    },
+    {
+      color: "#F7F2F2",
+      media: "light",
+    },
+  ],
+  authors: {
+    name: "Vighnesh Gupta",
+    url: new URL("https://vigneshgupta.vercel.app/"),
+  },
+  creator: "Vighnesh Gupta",
+  colorScheme: "dark light",
+  keywords: ["nextjs", "frontend", "starter", "vignesh", "react", "vercel" , "shadcn" , "clerk" , "prisma"],
 };
 
 export default function RootLayout({
