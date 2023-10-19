@@ -15,7 +15,6 @@ const useFetch = (url: string) => {
       setError(error);
     }
   };
-
   return { data, error, isLoading, fetchData };
 };
 
