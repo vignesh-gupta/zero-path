@@ -47,7 +47,7 @@ const icons = {
         <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
       </>
     ),
-    className: "text-black hover:text-white bg-white hover:bg-black",
+    className: "text-black hover:text-white bg-white hover:bg-black border hover:border-muted",
     svg: (
       <svg
         className="h-4 w-4 group-hover:text-white"
