@@ -2,6 +2,8 @@
 
 ## Use of the Repo
 
+![pika-1697695021676-1x](https://github.com/vignesh-gupta/zero-path/assets/52371759/b603bee4-89b1-4a03-88c5-d82d9b7080dd)
+
 The intention of creating the repo is to avoid the wastage of the time in setting up the latest required tools and technologies
 
 ## Tools & Techs
