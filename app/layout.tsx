@@ -1,8 +1,11 @@
-import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
+
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
+
 import { Providers } from "@/components/providers";
 import { atkinsonHyperlegible } from "@/lib/fonts";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Zero Path - Your Next.js project kickstarter",
@@ -14,9 +17,9 @@ export const metadata: Metadata = {
     description:
       "Zero Path is the project starter kit for your NextJS project to the ball rolling in matter of seconds",
     creator: "@VighneshGupta9",
-    images: new URL("https://zeropath.vercel.app/"),
+    images: new URL(SITE_URL),
   },
-  metadataBase: new URL("https://zeropath.vercel.app/"),
+  metadataBase: new URL(SITE_URL),
   themeColor: "#FFF",
 };
 

@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import clsx from "clsx";
 import { ClassNameValue } from "tailwind-merge";
-import { DEPLOY_URL } from "@/lib/constants";
+import { DEPLOY_URL, GITHUB_URL } from "@/lib/constants";
 
 type SocialButtonProps = {
   icon: keyof typeof icons;
@@ -40,7 +40,7 @@ export default SocialButton;
 
 const icons = {
   github: {
-    href: "https://github.com/vignesh-gupta/zero-path",
+    href: GITHUB_URL,
     text: (
       <>
         {" "}
