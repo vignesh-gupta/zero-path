@@ -6,7 +6,7 @@
 
 Zero-Path is a Next.js starter kit template of opinionated libraries , hooks & utilities
 
-https://github.com/vignesh-gupta/zero-path/assets/52371759/ba175b9a-5e5c-420b-875c-e4ebe0cc4eca
+https://github.com/vignesh-gupta/zero-path/assets/52371759/652401d5-19d0-4400-ae52-a436c8080f75
 
 ## Try it out!
 
