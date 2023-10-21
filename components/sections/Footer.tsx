@@ -17,7 +17,7 @@ const FooterSection = () => {
         A Project by{" "}
         <Link
           className="hover:underline text-foreground hover:text-primary underline-offset-4"
-          href="https://twitter.com/VighneshGupta9"
+          href="https://vigneshgupta.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
