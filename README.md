@@ -15,7 +15,7 @@ https://github.com/vignesh-gupta/zero-path/assets/52371759/652401d5-19d0-4400-ae
 You can also clone & create this repo locally with the following command:
 
 ```bash
-npx create-next-app precedent --example "https://github.com/steven-tey/precedent"
+npx create-next-app precedent --example "https://github.com/vignesh-gupta/zero-path"
 ```
 
 Then, install the dependencies with your package manager of choice:
