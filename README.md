@@ -33,7 +33,6 @@ pnpm i
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
 - [Clerk](https://clerk.com/): A JavaScript library for user management and authentication.
 - [Prisma](https://www.prisma.io/) – Typescript-first ORM for Node.js
-- [TypeScript](https://www.typescriptlang.org/):A typed superset of JavaScript that provides enhanced tooling and developer productivity.
 
 ### Platforms
 
