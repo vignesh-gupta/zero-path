@@ -13,10 +13,7 @@ const HeroSection = () => {
       <Link
         rel="noopener noreferrer"
         target="_blank"
-        href={
-          process.env.NEXT_PUBLIC_TWEET_LINK ||
-          "https://twitter.com/VighneshGupta9"
-        }
+        href="https://twitter.com/vigneshfixes/status/1723395461325951152"
       >
         <motion.p
           initial={{ opacity: 0, y: 20 }}
