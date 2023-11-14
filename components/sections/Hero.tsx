@@ -20,7 +20,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className={clsx(
-            "flex p-4 py-2 border border-muted bg-black/80 dark:bg-white text-white dark:text-black rounded-full shadow-lg gap-2 mb-5 items-center",
+            "flex p-4 py-2 border border-muted bg-gradient-to-b from-black to-black/60 dark:from-white dark:to-white/70 text-white dark:text-black rounded-full shadow-lg gap-2 mb-5 items-center",
             atkinsonHyperlegible.className,
           )}
         >
